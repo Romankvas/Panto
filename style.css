@@ -1,1 +1,143 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    color: #1a1a1a;
+}
 
+.best-selling {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+ 
+.categories {
+    background: #eeeeee;
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.cat-btn {
+    border: none;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #777;
+    transition: 0.3s;
+}
+
+.cat-btn.active {
+    background: #0d1b3e;
+    color: white;
+}
+
+ 
+.products-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex-grow: 1;
+}
+
+ 
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+}
+
+.img-box {
+    background: #f4f4f4;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.img-box img { max-width: 80%; }
+
+.category-label {
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.stars {
+    color: #f2994a;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.price sup { font-size: 10px; }
+
+.add-item {
+    background: #0d1b3e;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+ 
+.nav-arrow {
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.view-all {
+    margin-top: 40px;
+}
+
+.view-all a {
+    color: #f2994a;
+    text-decoration: none;
+    font-weight: 600;
+}
