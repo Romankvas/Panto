@@ -12,9 +12,73 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
+<!-- // 1 блок -->
+
     
 </head>
 <body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Panto</div>
+            <ul class="nav-links">
+                <li><a href="#">Furniture ▾</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart-wrapper">
+                <div class="cart-icon" id="cartBtn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" width="24" alt="cart">
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="cart-sidebar" id="cartSidebar">
+                    <h3>Ваше замовлення</h3>
+                    <div class="cart-items">
+                        <p class="empty-msg">Кошик порожній</p>
+                    </div>
+                    <form id="orderForm" class="order-form">
+                        <input type="email" placeholder="Електронна адреса" required>
+                        <input type="text" placeholder="Ваше ім'я" required>
+                        <button type="submit" class="order-btn">Оформити</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="hero-content">
+            <h1>Make Your Interior More <br> Minimalistic & Modern</h1>
+            <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search furniture">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    
+        <div class="hotspot" style="top: 65%; left: 20%;">
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-content">Комфортне крісло</div>
+        </div>
+        <div class="hotspot" style="top: 75%; left: 55%;">
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-content">Стильний столик</div>
+        </div>
+    </header>
+    
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h3>Дякуємо!</h3>
+            <p>Ваше замовлення оформлено.</p>
+            <button onclick="closeModal()">Закрити</button>
+        </div>
+    </div>
+
+
+
+    
+<!-- // 2 блок -->
+
+
 
 <section class="best-selling">
     <h2>Best Selling Product</h2>
