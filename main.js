@@ -1,5 +1,4 @@
-
-// Відкриття/Закриття кошика
+ 
 $('#cartBtn').on('click', function(e) {
     e.stopPropagation();
     $('#cartSidebar').toggleClass('active');
@@ -13,25 +12,24 @@ $(document).on('click', function(e) {
 
 
 
-// Додавання в кошик (логіка для ваших кнопок "+")
+ 
 let cartCount = 0;
 $(document).on('click', '.add-item', function() {
     cartCount++;
     $('.cart-count').text(cartCount);
     $('.empty-msg').hide();
     
-    // Анімація кнопки
+   
     $(this).css('transform', 'scale(0.8)');
     setTimeout(() => $(this).css('transform', 'scale(1)'), 200);
 });
-
-// Відправка форми
+  
 $('#orderForm').on('submit', function(e) {
     e.preventDefault();
     $('#cartSidebar').removeClass('active');
     $('#successModal').css('display', 'flex');
     
-    // Очищення
+ 
     cartCount = 0;
     $('.cart-count').text(cartCount);
     $('.empty-msg').show();
@@ -42,7 +40,7 @@ function closeModal() {
     $('#successModal').hide();
 }
 
-// Завантаження товарів (ваш існуючий код)
+ 
 axios.get('http://localhost:3000/api/products')
 .then(res => {
     for(let el of res.data){
