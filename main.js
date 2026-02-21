@@ -11,6 +11,8 @@ $(document).on('click', function(e) {
     }
 });
 
+
+
 // Додавання в кошик (логіка для ваших кнопок "+")
 let cartCount = 0;
 $(document).on('click', '.add-item', function() {
